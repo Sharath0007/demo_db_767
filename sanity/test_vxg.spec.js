@@ -6,6 +6,7 @@ test('test_vxg @sanity', async ({ page }) => {
   await page.waitForLoadState('domcontentloaded');
 
   await expect(page.locator('[data-test="username"]')).toBeEnabled();
+  await expect(page.locator('[data-test="username"]')).toBeEnabled();
   await page.locator('[data-test="username"]').click();
   await expect(page.locator('[data-test="username"]')).toBeEditable();
   await page.locator('[data-test="username"]').fill(testData.username);
