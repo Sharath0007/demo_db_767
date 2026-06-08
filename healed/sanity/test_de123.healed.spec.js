@@ -18,4 +18,6 @@ test('test_de123 @sanity', async ({ page }) => {
   await heal(page, 'login button', 'click', null, () => page.locator('[data-test="login-button"]'));
   await heal(page, 'login button', 'click', null, () => page.locator('[data-test="login-button"]'));
   await heal(page, 'login button', 'click', null, () => page.locator('[data-test="login-button"]'));
+  await heal(page, 'login button', 'click', null, () => page.locator('[data-test="login-button"]'));
+  await heal(page, 'login button', 'click', null, () => page.locator('[data-test="login-button"]'));
 });
