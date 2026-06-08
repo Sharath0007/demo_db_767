@@ -20,4 +20,5 @@ test('test_de123 @sanity', async ({ page }) => {
   await expect(page.locator('[data-test="login-button"]')).toBeEnabled();
   await page.locator('[data-test="login-button"]').click();
   await page.locator('[data-test="login-button"]').click();
+  await page.locator('[data-test="login-button"]').click();
 });
