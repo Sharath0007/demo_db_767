@@ -5,7 +5,7 @@ test('test_de123 @sanity', async ({ page }) => {
   await page.goto(testData.url);
   
   await page.waitForLoadState('domcontentloaded');
-
+  await page.waitForLoadState('domcontentloaded');
   await expect(page.locator('[data-test="username"]')).toBeEnabled();
   await page.locator('[data-test="username"]').click();
   await page.locator('[data-test="username"]').click();
