@@ -8,6 +8,7 @@ test('test_de123 @sanity', async ({ page }) => {
 
   await expect(page.locator('[data-test="username"]')).toBeEnabled();
   await page.locator('[data-test="username"]').click();
+  await page.locator('[data-test="username"]').click();
   await expect(page.locator('[data-test="username"]')).toBeEditable();
   await page.locator('[data-test="username"]').fill(testData.username);
 
