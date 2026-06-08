@@ -3,6 +3,7 @@ import { test, expect } from '@playwright/test';
 
 test('test_de123 @sanity', async ({ page }) => {
   await page.goto(testData.url);
+  
   await page.waitForLoadState('domcontentloaded');
 
   await expect(page.locator('[data-test="username"]')).toBeEnabled();
