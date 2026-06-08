@@ -21,4 +21,5 @@ test('test_de123 @sanity', async ({ page }) => {
   await page.locator('[data-test="login-button"]').click();
   await page.locator('[data-test="login-button"]').click();
   await page.locator('[data-test="login-button"]').click();
+  await page.locator('[data-test="login-button"]').click();
 });
